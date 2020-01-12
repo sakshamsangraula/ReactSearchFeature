@@ -1,0 +1,21 @@
+import React, {Component} from 'react';
+
+class SearchBar extends Component{
+
+    constructor(props)
+    {
+        super(props);
+        this.state = {term: ' '};
+    }
+    render(){
+        // THE OPENING PARANTHESIS NEEDS TO BE ON THE SAME LINE AS THE LINE RETURN 
+        return (
+            <div>
+        <input onChange = {event => this.setState({term: event.target.value})} />
+        Value of the input is : {this.state.term}
+        </div>
+        );
+    }
+}
+
+export default SearchBar;
