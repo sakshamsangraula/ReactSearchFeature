@@ -5,6 +5,7 @@ import SearchBar from './components/search_bar';
 const API_KEY = 'AIzaSyCIPsLz_r0-aTeNzXxsg5PSBUhZ_R7Bvoo';
 // create a new component that produces HTML
 
+// return the SearchBar component imported from the search_bar file
 const App = () => {
    return <div><SearchBar /></div> 
 }
